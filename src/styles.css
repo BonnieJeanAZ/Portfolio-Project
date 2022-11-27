@@ -50,23 +50,8 @@ hr {
   margin: 20px;
   margin-top: 40px;
 }
-
 .navbar {
   background: var(--background-color);
-}
-
-.navigation-links a {
-  margin: 20px;
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-
-.navigation-links {
-  display: flex;
-  margin: 15px auto;
-  justify-content: center;
 }
 
 .hero {
@@ -124,18 +109,6 @@ hr {
   display: block;
 }
 
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 28px;
-  text-decoration: none;
-}
-
-.email-link:hover {
-  text-decoration: underline;
-}
-
 #header-img {
   max-height: 55px;
   opacity: 0.8;
@@ -186,12 +159,6 @@ hr {
     border-radius: 50%;
     display: inline-block;
     margin: 5px;
-  }
-
-  .primary-link {
-    display: block;
-    text-align: center;
-    margin: 0 20px;
   }
 }
 @media (min-width: 805px) {
