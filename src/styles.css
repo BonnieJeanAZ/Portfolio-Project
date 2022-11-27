@@ -48,6 +48,18 @@ p {
   text-align: center;
 }
 
+i {
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+hr {
+  border-top: 3px dotted var(--primary-color);
+  background-color: transparent;
+  margin: 20px;
+  margin-top: 40px;
+}
+
 .navbar {
   background: var(--background-color);
 }
@@ -71,6 +83,20 @@ p {
   border: var(--border);
   border-radius: 20px;
   padding: 10px;
+}
+
+.dot {
+  height: 50px;
+  width: 50px;
+  background-color: var(--background-color);
+  border-radius: 50%;
+  display: inline-block;
+  margin: 10px;
+}
+
+.social-links {
+  display: block;
+  text-align: center;
 }
 
 .homepage-link {
