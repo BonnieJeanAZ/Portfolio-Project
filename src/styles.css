@@ -12,6 +12,7 @@ body {
   margin: 75px 20px;
   padding: 10px;
   background-color: whitesmoke;
+  font-family: "Fauna One", serif;
 }
 h1,
 h2,
@@ -19,33 +20,23 @@ h3 {
   text-align: center;
   display: block;
   margin: 0 auto;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 52px;
   margin: 0;
 }
 
 h2 {
-  font-size: 24px;
-  margin: 0;
+  font-size: 18px;
+  margin-top: 5px;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 21px;
   opacity: 0.7;
   margin: 0;
   color: var(--accent-color1);
-}
-
-p {
-  background: var(--secondary-color);
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 16px;
-  text-align: center;
 }
 
 i {
@@ -85,6 +76,25 @@ hr {
   padding: 10px;
 }
 
+#quote {
+  background: var(--secondary-color);
+  font-size: 22px;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  color: var(--primary-color);
+}
+
+.col-sm-5,
+.col-sm-7 {
+  padding: 4px;
+  margin: 2px;
+}
+
+.container {
+  margin: 0px;
+  max-width: 100%;
+}
+
 .dot {
   height: 50px;
   width: 50px;
@@ -97,6 +107,15 @@ hr {
 .social-links {
   display: block;
   text-align: center;
+}
+
+.credits {
+  text-align: center;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-style: italic;
+  margin-top: 15px;
+  color: var(--accent-color2);
 }
 
 .homepage-link {
@@ -118,41 +137,72 @@ hr {
 }
 
 #header-img {
-  max-height: 100px;
+  max-height: 55px;
   opacity: 0.8;
   border-radius: 100%;
 }
 
 #headshot-img {
-  border: var(--border);
   border-radius: 20px;
 }
 
-@media (max-width: 712px) {
+@media (max-width: 642px) {
   h1 {
-    font-size: 42px;
+    font-size: 24px;
     line-height: 1.5;
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 14px;
     text-align: center;
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
   }
 
-  p {
-    text-align: center;
-    padding: 10px;
-    font-size: 16px;
+  i {
+    font-size: 18px;
+    padding-top: 6px;
+  }
+
+  #header-img {
+    max-height: 35px;
+    opacity: 0.8;
+    border-radius: 100%;
+  }
+
+  #quote {
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 0px;
+  }
+
+  .dot {
+    height: 30px;
+    width: 30px;
+    background-color: var(--background-color);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
   }
 
   .primary-link {
     display: block;
     text-align: center;
     margin: 0 20px;
+  }
+}
+@media (min-width: 805px) {
+  #quote {
+    font-size: 28px;
+    padding: 10px;
+  }
+}
+@media (min-width: 1020px) {
+  #quote {
+    font-size: 34px;
+    padding: 15px;
   }
 }
