@@ -74,6 +74,14 @@ hr {
   color: var(--primary-color);
 }
 
+#resume {
+  background: var(--secondary-color);
+  font-size: 42px;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  color: var(--primary-color);
+}
+
 .col-sm-5,
 .col-sm-7 {
   padding: 4px;
@@ -124,19 +132,60 @@ hr {
   border-radius: 20px;
 }
 
-@media (max-width: 642px) {
+.about-hero {
+  background: var(--secondary-color);
+  border: var(--border);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.btn {
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+}
+
+a.btn:hover {
+  background-color: var(--primary-color);
+  background-blend-mode: lighten;
+  -webkit-text-fill-color: var(--secondary-color);
+}
+
+#portfolio-img {
+  float: left;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  shape-outside: circle();
+  margin: 10px;
+  border: 2px solid var(--primary-color);
+}
+
+#resume-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  shape-outside: circle();
+  margin: 10px;
+  border: 2px solid var(--primary-color);
+}
+
+#about-me {
+  font-size: 16px;
+}
+
+@media (max-width: 766px) {
   h1 {
     font-size: 24px;
     line-height: 1.5;
   }
 
-  h2 {
-    font-size: 14px;
-    text-align: center;
-  }
-
+  h2,
   h3 {
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
   }
 
@@ -165,8 +214,36 @@ hr {
     display: inline-block;
     margin: 5px;
   }
+
+  #portfolio-img {
+    float: unset;
+    align-content: center;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    shape-outside: none;
+    margin: 10px;
+    border: 2px solid var(--primary-color);
+  }
+
+  #about-me {
+    font-size: 14px;
+  }
+
+  .mt-4 {
+    margin-top: 12px !important;
+  }
+
+  .btn {
+    padding: 7px;
+  }
+
+  body {
+    margin: 60px 5px;
+  }
 }
-@media (min-width: 805px) {
+@media (min-width: 766px) {
   #quote {
     font-size: 28px;
     padding: 10px;
