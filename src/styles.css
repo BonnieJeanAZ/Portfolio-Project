@@ -16,7 +16,8 @@ body {
 }
 h1,
 h2,
-h3 {
+h3,
+h5 {
   text-align: center;
   display: block;
   margin: 0 auto;
@@ -37,6 +38,12 @@ h3 {
   opacity: 0.7;
   margin: 0;
   color: var(--accent-color1);
+}
+
+h5 {
+  font-size: 18px;
+  margin: 0;
+  color: var(--primary-color);
 }
 
 i {
@@ -66,7 +73,7 @@ hr {
   padding: 10px;
 }
 
-#quote {
+#script-heading {
   background: var(--secondary-color);
   font-size: 22px;
   text-align: center;
@@ -132,8 +139,8 @@ hr {
   border-radius: 20px;
 }
 
-.about-hero {
-  background: var(--secondary-color);
+.border-hero {
+  background: var(--secondary-color--);
   border: var(--border);
   border-radius: 20px;
   padding: 10px;
@@ -142,12 +149,39 @@ hr {
 .btn {
   border: 1px solid var(--primary-color);
   border-radius: 10px;
+  box-shadow: var(--box-shadow);
   padding: 10px;
   margin: 5px;
 }
 
 a.btn:hover {
   background-color: var(--primary-color);
+  background-blend-mode: lighten;
+  -webkit-text-fill-color: var(--secondary-color);
+}
+
+.btn-sm {
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  padding: 5px;
+  margin: 0 auto;
+  max-width: 40%;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--secondary-color);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: var(--primary-color);
+}
+
+a.btn-sm:hover {
+  background-color: var(--accent-color1);
   background-blend-mode: lighten;
   -webkit-text-fill-color: var(--secondary-color);
 }
@@ -177,6 +211,22 @@ a.btn:hover {
   font-size: 16px;
 }
 
+.work-header {
+  font-size: 34px;
+}
+
+p.card-text {
+  font-size: 10pt;
+  text-align: center;
+}
+
+.card {
+  border: 1px solid var(--accent-color2);
+  box-shadow: var(--box-shadow);
+  padding: 5px;
+  background-color: transparent;
+}
+
 @media (max-width: 766px) {
   h1 {
     font-size: 24px;
@@ -184,7 +234,8 @@ a.btn:hover {
   }
 
   h2,
-  h3 {
+  h3,
+  h5 {
     font-size: 14px;
     text-align: center;
   }
@@ -200,7 +251,7 @@ a.btn:hover {
     border-radius: 100%;
   }
 
-  #quote {
+  #script-heading {
     font-size: 18px;
     margin-top: 10px;
     padding: 0px;
@@ -242,15 +293,22 @@ a.btn:hover {
   body {
     margin: 60px 5px;
   }
+  .work-header {
+    font-size: 21px;
+  }
+
+  p.card-text {
+    font-size: 14pt;
+  }
 }
 @media (min-width: 766px) {
-  #quote {
+  #script-heading {
     font-size: 28px;
     padding: 10px;
   }
 }
 @media (min-width: 1020px) {
-  #quote {
+  #script-heading {
     font-size: 34px;
     padding: 15px;
   }
