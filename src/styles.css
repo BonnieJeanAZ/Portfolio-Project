@@ -292,7 +292,7 @@ p.card-text {
   }
 
   .container-xxl {
-    margin: 5px;
+    margin: 15px;
   }
 
   .mt-4 {
@@ -506,8 +506,10 @@ p.card-text {
     text-align: center;
   }
 
-  .ms-auto {
-    margin-left: auto !important;
+  .container-xxl {
+    max-width: 1700px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   /* index.html */
