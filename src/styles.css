@@ -83,6 +83,7 @@ a.btn:hover {
 
 .navbar {
   background: var(--background-color);
+  width: 100% !important;
 }
 
 .nav-link.active {
@@ -290,7 +291,7 @@ p.card-text {
     border-radius: 100%;
   }
 
-  .container-lg {
+  .container-xxl {
     margin: 5px;
   }
 
@@ -389,7 +390,7 @@ p.card-text {
     margin-top: 20px;
   }
 
-  .container-lg {
+  .container-xxl {
     margin: 5px;
   }
 
@@ -503,6 +504,10 @@ p.card-text {
   h2 {
     font-size: 21px;
     text-align: center;
+  }
+
+  .ms-auto {
+    margin-left: auto !important;
   }
 
   /* index.html */
