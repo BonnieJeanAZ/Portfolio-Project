@@ -128,7 +128,7 @@ a.btn:hover {
 
 #headshot-img {
   border-radius: 20px;
-  scale: 30%;
+  max-height: 400px;
 }
 
 #script-quote {
